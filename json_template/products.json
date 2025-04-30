@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Canon AE-1",
+    "price": 120,
+    "imgUrl": "https://drive.google.com/thumbnail?id=1R94ejIre8mBRnpGeAG9tzAX6Sx0LCxSX&sz=w500",
+    "description": "Kultinis 35 mm SLR fotoaparatas su diafragmos prioritetu, mėgstamas tiek pradedančiųjų, tiek profesionalų.",
+    "location": "Kauans",
+    "id": "1"
+  },
+  {
+    "title": "Nikon FM2",
+    "price": 150,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Itin patvarus visiškai mechaninis 35 mm SLR su legendariniu 1/4000 s užrakto laiku.",
+    "location": "Kauans",
+    "id": "2"
+  },
+  {
+    "title": "Contax T2",
+    "price": 300,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Premium klasės 35mm kompaktinis fotoaparatas su aštriu Zeiss objektyvu ir automatinio fokusavimo sistema.",
+    "location": "Kauans",
+    "id": "3"
+  },
+  {
+    "title": "Pentax K1000",
+    "price": 125,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Paprastas, be jokių nereikalingų funkcijų 35 mm SLR, puikus pasirinkimas fotografijos studentams.",
+    "location": "Kauans",
+    "id": "4"
+  },
+  {
+    "title": "Mamiya RB67",
+    "price": 500,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Modulinis vidutinio formato monstras, vertinamas studijiniuose ir portretiniuose nuotraukose.",
+    "location": "Kauans",
+    "id": "5"
+  },
+  {
+    "title": "Nikon F2",
+    "price": 180,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Itin patvarus profesionalus 35 mm SLR fotoaparatas, naudotas fotoreporterių.",
+    "location": "Kauans",
+    "id": "6"
+  },
+  {
+    "title": "Olympus MJU II (Stylus Epic)",
+    "price": 110,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Elegantiškas 35 mm kompaktinis fotoaparatas su itin aštriu f/2.8 objektyvu.",
+    "location": "Kauans",
+    "id": "7"
+  },
+  {
+    "title": "Hasselblad 500CM",
+    "price": 1300,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Kultinis 6x6 vidutinio formato fotoaparatas, naudotas NASA ir profesionalų.",
+    "location": "Kauans",
+    "id": "8"
+  },
+  {
+    "title": "Canon EOS-1V",
+    "price": 600,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Pažangus 35 mm autofokusinis SLR, paskutinis Canon profesionalų linijos filminis fotoaparatas.",
+    "location": "Kauans",
+    "id": "9"
+  },
+  {
+    "title": "Lomo LC-A+",
+    "price": 35,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Ypatingas 35 mm kompaktinis fotoaparatas, žinomas dėl ryškių spalvų ir šviesos nutekėjimo efektų (Lomography mėgėjų favoritas).",
+    "location": "Kauans",
+    "id": "10"
+  },
+  {
+    "title": "Leica M6",
+    "price": 30,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Legendinis 35 mm teleskopinio vaizdo ieškiklio fotoaparatas, derinantis precizišką mechaniką su tyliu darbu.",
+    "location": "Kauans",
+    "id": "11"
+  },
+  {
+    "title": "Canonet G-III QL17",
+    "price": 90,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Kompaktiškas 35 mm teleskopinio vaizdo ieškiklio fotoaparatas su greituoju f/1.7 objektyvu ir greito įdėjimo sistema.",
+    "location": "Kauans",
+    "id": "12"
+  },
+  {
+    "title": "Fed 3",
+    "price": 25,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "Sovietinės eros 35 mm teleskopinio vaizdo ieškiklio fotoaparatas, budžetinė Leica alternatyva.",
+    "location": "Kauans",
+    "id": "13"
+  },
+  {
+    "title": "Smena 8m",
+    "price": 5,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "description 14",
+    "location": "Kauans",
+    "id": "14"
+  },
+  {
+    "title": "title 15",
+    "price": 16,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "description 15",
+    "location": "Kauans",
+    "id": "15"
+  },
+  {
+    "title": "title 16",
+    "price": 53,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "description 16",
+    "location": "Kauans",
+    "id": "16"
+  },
+  {
+    "title": "title 17",
+    "price": 83,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "description 17",
+    "location": "Kauans",
+    "id": "17"
+  },
+  {
+    "title": "title 18",
+    "price": 45,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "description 18",
+    "location": "Kauans",
+    "id": "18"
+  },
+  {
+    "title": "title 19",
+    "price": 15,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "description 19",
+    "location": "Kauans",
+    "id": "19"
+  },
+  {
+    "title": "title 20",
+    "price": 73,
+    "imgUrl": "https://drive.google.com/thumbnail?id=IMGID&sz=w500",
+    "description": "description 20",
+    "location": "Kauans",
+    "id": "20"
+  }
+]
