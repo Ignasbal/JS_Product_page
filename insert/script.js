@@ -40,9 +40,16 @@ submitBtn.addEventListener("click", async () => {
     description: descriptionInput.value.trim(),
   };
 
+  // Input Validation
+  if (!data.title || !data.imgUrl || !data.location || !data.description) {
+    messageDiv.textContent = "Užpildykite informacija.";
+    messageDiv.style.color = "#bd1b05";
+    return;
+  }
+
   if (isNaN(data.price) || data.price <= 0) {
     messageDiv.textContent = "Įveskite kainą, didesnę nei 0.";
-    messageDiv.style.color = "#0545bd";
+    messageDiv.style.color = "#bd1b05";
     return;
   }
 
@@ -51,18 +58,18 @@ submitBtn.addEventListener("click", async () => {
   if (products) {
     console.log("products", products);
 
-    // Reset form
+    // Kai sėkmingas siuntimas restartuoja laukus
     titleInput.value = "";
     priceInput.value = "";
     imgUrlInput.value = "";
     locationInput.value = "";
     descriptionInput.value = "";
 
-    // Show success message
+    // Sėkmingas siuntimas
     messageDiv.textContent = "Produktas pridėtas sėkmingai!";
     messageDiv.style.color = "green";
 
-    // Optional: Clear message after 5 seconds
+    // Žinutė išnyksta
     setTimeout(() => {
       messageDiv.textContent = "";
     }, 5000);

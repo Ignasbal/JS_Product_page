@@ -12,25 +12,67 @@ const fetchProducts = async () => {
 const buildCards = (data) => {
   data.forEach((d) => {
     const card = document.createElement("div");
-    // CSS class
     card.classList.add("card");
-
-    const title = document.createElement("h2");
-    title.textContent = d.title;
 
     const img = document.createElement("img");
     img.src = d.imgUrl;
 
+    const content = document.createElement("div");
+    content.classList.add("card-content");
+
+    const title = document.createElement("h2");
+    title.textContent = d.title;
+
+    const description = document.createElement("p");
+    description.textContent = d.description;
+    description.classList.add("description");
+
+    const location = document.createElement("p");
+    location.textContent = d.location;
+    location.classList.add("location");
+
     const price = document.createElement("p");
-    title.textContent = d.price;
+    price.textContent = `${d.price} €`;
+    price.classList.add("price");
 
-    card.append(img);
-    card.append(title);
-    card.append(price);
-
+    content.append(title, description, location, price);
+    card.append(img, content);
     productsWrapper.append(card);
   });
 };
+
+// const buildCards = (data) => {
+//   data.forEach((d) => {
+//     const card = document.createElement("div");
+//     // CSS class
+//     card.classList.add("card");
+
+//     card.addEventListener("click", () => {});
+
+//     const title = document.createElement("h2");
+//     title.textContent = d.title;
+
+//     const img = document.createElement("img");
+//     img.src = d.imgUrl;
+
+//     const price = document.createElement("p");
+//     price.textContent = `$${d.price}`;
+
+//     const description = document.createElement("p");
+//     description.textContent = d.description;
+
+//     const location = document.createElement("p");
+//     location.textContent = d.location;
+
+//     card.append(img);
+//     card.append(title);
+//     card.append(price);
+//     card.append(location);
+//     card.append(description);
+
+//     productsWrapper.append(card);
+//   });
+// };
 
 const buildScreen = async () => {
   const products = await fetchProducts();
