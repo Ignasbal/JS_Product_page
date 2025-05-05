@@ -42,7 +42,7 @@ deleteBtn.addEventListener("click", async () => {
 
       setTimeout(() => {
         window.location.replace("../index.html");
-      }, 3000);
+      }, 2000);
     } else {
       message.textContent = "Klaida trinant produktą.";
     }
@@ -51,15 +51,3 @@ deleteBtn.addEventListener("click", async () => {
     message.textContent = "Įvyko klaida trinant.";
   }
 });
-
-// deleteBtn.addEventListener("click", async () => {
-//   const response = await deleteProductById();
-
-//   if (products) {
-//     message.textContent = "Produktas ištrintas";
-
-//     setTimeout(() => {
-//       window.location.replace("../index.html");
-//     }, 3000);
-//   }
-// });
