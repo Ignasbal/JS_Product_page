@@ -9,11 +9,27 @@ const price = document.getElementById("price");
 const location = document.getElementById("location");
 const description = document.getElementById("description");
 
+const deleteBtn = document.getElementById("delete-btn");
+
+const message = document.getElementById("message");
+
 console.log(id);
 
 const fetchProductById = async () => {
   const response = await fetch(
     `https://6810912827f2fdac2411de32.mockapi.io/products/${id}`
+  );
+
+  const data = await response.json();
+  return data;
+};
+
+const deleteProductById = async () => {
+  const response = await fetch(
+    `https://6810912827f2fdac2411de32.mockapi.io/products/${id}`,
+    {
+      method: "DELETE",
+    }
   );
 
   const data = await response.json();
@@ -34,3 +50,35 @@ const buildScreen = async () => {
 };
 
 buildScreen();
+
+deleteBtn.addEventListener("click", async () => {
+  try {
+    const deleted = await deleteProductById();
+
+    if (deleted && deleted.id) {
+      // Check if the API returned a deleted object
+      message.textContent = "Produktas ištrintas!";
+
+      setTimeout(() => {
+        window.location.replace("../index.html");
+      }, 3000);
+    } else {
+      message.textContent = "Klaida trinant produktą.";
+    }
+  } catch (error) {
+    console.error("Delete failed:", error);
+    message.textContent = "Įvyko klaida trinant.";
+  }
+});
+
+// deleteBtn.addEventListener("click", async () => {
+//   const response = await deleteProductById();
+
+//   if (products) {
+//     message.textContent = "Produktas ištrintas";
+
+//     setTimeout(() => {
+//       window.location.replace("../index.html");
+//     }, 3000);
+//   }
+// });

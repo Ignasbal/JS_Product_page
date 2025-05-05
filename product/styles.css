@@ -40,6 +40,12 @@ header ul {
   gap: 1rem;
 }
 
+.message {
+  color: orange;
+  size: 2rem;
+  text-align: right;
+}
+
 .card {
   width: 50%;
   height: 150px;
