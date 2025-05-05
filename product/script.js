@@ -1,36 +1,19 @@
-// import { fetchProductById, deleteProductById } from "../utils/fetch.js";
+const id = localStorage.getItem("productId");
 
-// const url = new URL(window.location.href);
-// const id = url.searchParams.get("id");
+console.log("Product ID:", id);
 
-// const title = document.getElementById("title");
-// const description = document.getElementById("description");
-// const img = document.getElementById("img");
+const fetchProductById = async () => {
+  const response = await fetch(
+    "https://6810912827f2fdac2411de32.mockapi.io/products/1"
+  );
 
-// const deleteBtn = document.getElementById("delete-btn");
+  const data = await response.json();
+  return data;
+};
 
-// const message = document.getElementById("message");
+const buildScreen = async () => {
+  const product = await fetchProductById();
+  console.log(product);
+};
 
-// const insertDataToScreen = (product) => {
-//   title.textContent = product.title;
-//   description.textContent = product.description;
-//   img.src = product.imgUrl;
-// };
-
-// const buildScreen = async () => {
-//   const candy = await fetchProductById(id);
-//   insertDataToScreen(product);
-// };
-
-// buildScreen();
-
-// deleteBtn.addEventListener("click", async () => {
-//   const candy = await deleteProductById(id);
-//   if (candy) {
-//     message.textContent = "Product was added deleted";
-
-//     setTimeout(() => {
-//       window.location.replace("../index.html");
-//     }, 3000);
-//   }
-// });
+buildScreen();
