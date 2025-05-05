@@ -12,15 +12,15 @@ const fetchProducts = async () => {
 const buildCards = (data) => {
   data.forEach((d) => {
     const card = document.createElement("a");
-    card.href = "./product/index.html";
+    card.href = `./product/index.html?id=${d.id}`;
 
     card.classList.add("card");
 
-    card.addEventListener("click", () => {
-      localStorage.setItem("productId", d.id);
+    // card.addEventListener("click", () => {
+    //   localStorage.setItem("productId", d.id);
 
-      // console.log("Product ID:", d.id);
-    });
+    //   console.log("Product ID:", d.id);
+    // });
 
     const img = document.createElement("img");
     img.src = d.imgUrl;
