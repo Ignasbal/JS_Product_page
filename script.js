@@ -49,43 +49,18 @@ const buildCards = (data) => {
   });
 };
 
-// const buildCards = (data) => {
-//   data.forEach((d) => {
-//     const card = document.createElement("div");
-//     // CSS class
-//     card.classList.add("card");
-
-//     card.addEventListener("click", () => {});
-
-//     const title = document.createElement("h2");
-//     title.textContent = d.title;
-
-//     const img = document.createElement("img");
-//     img.src = d.imgUrl;
-
-//     const price = document.createElement("p");
-//     price.textContent = `$${d.price}`;
-
-//     const description = document.createElement("p");
-//     description.textContent = d.description;
-
-//     const location = document.createElement("p");
-//     location.textContent = d.location;
-
-//     card.append(img);
-//     card.append(title);
-//     card.append(price);
-//     card.append(location);
-//     card.append(description);
-
-//     productsWrapper.append(card);
-//   });
-// };
-
 const buildScreen = async () => {
   const products = await fetchProducts();
+
+  // Sort by price (ascending)
+  products.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+
   buildCards(products);
 };
+// const buildScreen = async () => {
+//   const products = await fetchProducts();
+//   buildCards(products);
+// };
 
 buildScreen();
 
