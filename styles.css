@@ -114,13 +114,13 @@ main {
   font-weight: bold;
   margin: 0;
   padding-bottom: 5px;
-  border-bottom: 1px dotted #000;
+  border-bottom: 1px solid #000;
 }
 
 .card-content .description {
   margin: 8px 0 4px;
   font-size: 14px;
-  border-bottom: 1px dotted #000;
+  border-bottom: 1px solid #000;
   display: inline-block;
   max-width: fit-content;
 }
@@ -128,11 +128,14 @@ main {
 .card-content .location {
   font-size: 14px;
   margin: 0 0 10px;
+  max-width: fit-content;
+  border-bottom: 1px solid #000;
 }
 
 .card-content .price {
+  color: #4ab14a;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.5rem;
   margin-top: auto;
 }
 
