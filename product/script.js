@@ -1,3 +1,5 @@
+import { fetchProductById, deleteProductById } from "../utils/fetch.js";
+
 const url = new URL(window.location.href);
 const id = url.searchParams.get("id");
 
@@ -15,27 +17,6 @@ const message = document.getElementById("message");
 
 console.log(id);
 
-const fetchProductById = async () => {
-  const response = await fetch(
-    `https://6810912827f2fdac2411de32.mockapi.io/products/${id}`
-  );
-
-  const data = await response.json();
-  return data;
-};
-
-const deleteProductById = async () => {
-  const response = await fetch(
-    `https://6810912827f2fdac2411de32.mockapi.io/products/${id}`,
-    {
-      method: "DELETE",
-    }
-  );
-
-  const data = await response.json();
-  return data;
-};
-
 const insertDataToScreen = (product) => {
   img.src = product.imgUrl;
   title.textContent = product.title;
@@ -44,7 +25,7 @@ const insertDataToScreen = (product) => {
   description.textContent = product.description;
 };
 const buildScreen = async () => {
-  const product = await fetchProductById();
+  const product = await fetchProductById(id);
 
   insertDataToScreen(product);
 };
@@ -53,7 +34,7 @@ buildScreen();
 
 deleteBtn.addEventListener("click", async () => {
   try {
-    const deleted = await deleteProductById();
+    const deleted = await deleteProductById(id);
 
     if (deleted && deleted.id) {
       // Check if the API returned a deleted object

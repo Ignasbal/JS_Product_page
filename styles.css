@@ -127,6 +127,7 @@ main {
 
 .card-content .location {
   font-size: 14px;
+  font-weight: bold;
   margin: 0 0 10px;
   max-width: fit-content;
   border-bottom: 1px solid #000;
